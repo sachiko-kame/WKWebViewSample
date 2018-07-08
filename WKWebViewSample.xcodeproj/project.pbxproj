@@ -14,6 +14,11 @@
 		84E2AA0120F1C3170047B1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E2A9FF20F1C3170047B1E3 /* LaunchScreen.storyboard */; };
 		84E2AA0C20F1C3170047B1E3 /* WKWebViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AA0B20F1C3170047B1E3 /* WKWebViewSampleTests.swift */; };
 		84E2AA1720F1C3180047B1E3 /* WKWebViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AA1620F1C3180047B1E3 /* WKWebViewSampleUITests.swift */; };
+		84E2AA2520F1C3780047B1E3 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AA2420F1C3780047B1E3 /* WKWebViewController.swift */; };
+		84E2AA2920F1D2B10047B1E3 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AA2820F1D2B10047B1E3 /* ExtensionUIViewController.swift */; };
+		84E2AA2B20F1E7F10047B1E3 /* WKWebViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AA2A20F1E7F10047B1E3 /* WKWebViewController_2.swift */; };
+		84E2AA2D20F1E8130047B1E3 /* ExtensionWKProcessPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AA2C20F1E8130047B1E3 /* ExtensionWKProcessPool.swift */; };
+		84E2AA2F20F238F10047B1E3 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AA2E20F238F10047B1E3 /* Cookie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		84E2AA1220F1C3170047B1E3 /* WKWebViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E2AA1620F1C3180047B1E3 /* WKWebViewSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewSampleUITests.swift; sourceTree = "<group>"; };
 		84E2AA1820F1C3180047B1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E2AA2420F1C3780047B1E3 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		84E2AA2820F1D2B10047B1E3 /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		84E2AA2A20F1E7F10047B1E3 /* WKWebViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController_2.swift; sourceTree = "<group>"; };
+		84E2AA2C20F1E8130047B1E3 /* ExtensionWKProcessPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionWKProcessPool.swift; sourceTree = "<group>"; };
+		84E2AA2E20F238F10047B1E3 /* Cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				84E2A9F620F1C3170047B1E3 /* AppDelegate.swift */,
-				84E2A9F820F1C3170047B1E3 /* ViewController.swift */,
-				84E2A9FA20F1C3170047B1E3 /* Main.storyboard */,
+				84E2AA3220F243580047B1E3 /* ViewContoroller */,
+				84E2AA3120F243410047B1E3 /* Entity */,
+				84E2AA3020F242FD0047B1E3 /* Extension */,
 				84E2A9FD20F1C3170047B1E3 /* Assets.xcassets */,
 				84E2A9FF20F1C3170047B1E3 /* LaunchScreen.storyboard */,
 				84E2AA0220F1C3170047B1E3 /* Info.plist */,
@@ -123,6 +134,34 @@
 				84E2AA1820F1C3180047B1E3 /* Info.plist */,
 			);
 			path = WKWebViewSampleUITests;
+			sourceTree = "<group>";
+		};
+		84E2AA3020F242FD0047B1E3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84E2AA2820F1D2B10047B1E3 /* ExtensionUIViewController.swift */,
+				84E2AA2C20F1E8130047B1E3 /* ExtensionWKProcessPool.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84E2AA3120F243410047B1E3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				84E2AA2E20F238F10047B1E3 /* Cookie.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		84E2AA3220F243580047B1E3 /* ViewContoroller */ = {
+			isa = PBXGroup;
+			children = (
+				84E2A9F820F1C3170047B1E3 /* ViewController.swift */,
+				84E2A9FA20F1C3170047B1E3 /* Main.storyboard */,
+				84E2AA2420F1C3780047B1E3 /* WKWebViewController.swift */,
+				84E2AA2A20F1E7F10047B1E3 /* WKWebViewController_2.swift */,
+			);
+			path = ViewContoroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E2AA2920F1D2B10047B1E3 /* ExtensionUIViewController.swift in Sources */,
+				84E2AA2D20F1E8130047B1E3 /* ExtensionWKProcessPool.swift in Sources */,
+				84E2AA2B20F1E7F10047B1E3 /* WKWebViewController_2.swift in Sources */,
+				84E2AA2520F1C3780047B1E3 /* WKWebViewController.swift in Sources */,
 				84E2A9F920F1C3170047B1E3 /* ViewController.swift in Sources */,
+				84E2AA2F20F238F10047B1E3 /* Cookie.swift in Sources */,
 				84E2A9F720F1C3170047B1E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BS3A226T4;
 				INFOPLIST_FILE = WKWebViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachiko.WKWebViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BS3A226T4;
 				INFOPLIST_FILE = WKWebViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachiko.WKWebViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
