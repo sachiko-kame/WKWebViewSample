@@ -22,10 +22,10 @@
                                 <rect key="frame" x="20" y="30" width="335" height="627"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnj-wy-t0x">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.54996349822899071" green="0.6361764634020125" blue="0.73469225888324874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="Jf6-Hp-yJJ"/>
+                                            <constraint firstAttribute="height" constant="30" id="Jf6-Hp-yJJ"/>
                                         </constraints>
                                         <state key="normal" title="Webへ">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,20 +35,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rj-Hm-rPh">
-                                        <rect key="frame" x="0.0" y="40" width="335" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="50" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.78862626903553301" green="0.51735675947475435" blue="0.64031204963896082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5UB-Zu-diz"/>
+                                        </constraints>
                                         <state key="normal" title="Web2へ">
-                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="Web2tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDl-VR-EFB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-6x-1Qg">
-                                        <rect key="frame" x="0.0" y="60" width="335" height="20"/>
+                                        <rect key="frame" x="0.0" y="100" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.24944185590000001" green="0.35870096750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="ddj-9y-VqP"/>
+                                            <constraint firstAttribute="height" constant="30" id="ddj-9y-VqP"/>
                                         </constraints>
                                         <state key="normal" title="Cookie表示">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,8 +61,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkm-K4-bXO">
-                                        <rect key="frame" x="0.0" y="100" width="335" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="150" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.34925580569999998" green="0.82847199869999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="tGA-dZ-TVE"/>
+                                        </constraints>
                                         <state key="normal" title="cookie削除">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -68,7 +74,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y3e-t3-Lsh">
-                                        <rect key="frame" x="0.0" y="120" width="335" height="507"/>
+                                        <rect key="frame" x="0.0" y="200" width="335" height="427"/>
                                         <color key="backgroundColor" red="1" green="0.87860575009999997" blue="0.76964957779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
