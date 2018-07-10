@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 //参考:https://github.com/keisukeYamagishi/HttpSession/blob/d65a69a8945b5ad07e4c72479f5b275f8e249a78/Lib/Lib/src/AuthKit/Cookie.swift
+//ここでは全てのcookieの取得セット行なっていますが、使うものだけにした方が良さそう。ifとか使って分けるのが良さそうです。
 open class Cookie: NSObject {
     
     public static let shared: Cookie = Cookie()
@@ -43,11 +44,11 @@ open class Cookie: NSObject {
     }
     
     public func allremovecookie(){
-//        if let cookies = HTTPCookieStorage.shared.cookies {
-//            for cookie in cookies {
-//                HTTPCookieStorage.shared.deleteCookie(cookie)
-//            }
-//        }
+        if let cookies = HTTPCookieStorage.shared.cookies {
+            for cookie in cookies {
+                HTTPCookieStorage.shared.deleteCookie(cookie)
+            }
+        }
         
         URLSession.shared.reset {}
         UserDefaults.standard.synchronize()
@@ -56,5 +57,7 @@ open class Cookie: NSObject {
         dataStore.fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes()) { records in
             dataStore.removeData(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes(), for: records, completionHandler: {})
         }
+        
+        WKProcessPool.shared.reset()
     }
 }

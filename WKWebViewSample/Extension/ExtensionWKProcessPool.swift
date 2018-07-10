@@ -8,5 +8,9 @@
 import WebKit
 
 extension WKProcessPool {
-    static let shared = WKProcessPool()
+    static var shared = WKProcessPool()
+    
+    func reset(){
+        WKProcessPool.shared = WKProcessPool()
+    }
 }

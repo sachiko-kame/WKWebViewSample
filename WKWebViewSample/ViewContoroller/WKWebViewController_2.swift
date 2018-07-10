@@ -27,6 +27,7 @@ class WKWebViewController_2: UIViewController {
         wkWebView?.navigationDelegate = self
         
         var req = URLRequest(url: url)
+        //ここのurlは認証確認のurlにすること。
         let header  = HTTPCookie.requestHeaderFields(with: Cookie.shared.getcookie(url: "https://ja-jp.facebook.com/")!)
         req.allHTTPHeaderFields = header
         

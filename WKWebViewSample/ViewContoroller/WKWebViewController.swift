@@ -49,6 +49,7 @@ class WKWebViewController: UIViewController {
 //                    self.wkWebView?.loadHTMLString(String(data: data!, encoding: .utf8)!, baseURL: url)
                     //or
                     self.wkWebView?.load(data!, mimeType: "text/html", characterEncodingName: "utf-8", baseURL: url)
+                    //これよりもloadHTMLStringにStringでHTML直書きしてそのボタン自動的に押すの方がうまく行きました。
                 }
             }
         }
