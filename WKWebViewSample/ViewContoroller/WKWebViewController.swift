@@ -24,7 +24,7 @@ class WKWebViewController: UIViewController {
         self.wkWebView = WKWebView(frame: self.GatBaseframe(), configuration: configuration)
         self.wkWebView?.translatesAutoresizingMaskIntoConstraints = false
         
-//        wkWebView?.uiDelegate = self
+        wkWebView?.uiDelegate = self
         wkWebView?.navigationDelegate = self
         
         var req = URLRequest(url: url)
@@ -65,9 +65,17 @@ class WKWebViewController: UIViewController {
 }
 
 extension WKWebViewController:WKNavigationDelegate{
-//    func evaluateJavaScript(_: String, completionHandler: ((Any?, Error?) -> Void)? = nil){
-//
-//    }
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error){
+        let a = WKWebViewErrorStruct(erro: error)
+        print("\(a.errorUrl)")
+        
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error){
+        let a = WKWebViewErrorStruct(erro: error)
+        print("\(a.errorUrl)")
+        
+    }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
 
@@ -79,7 +87,12 @@ extension WKWebViewController:WKNavigationDelegate{
 }
 
 
-//extension WKWebViewController:WKUIDelegate{
-//
-//}
+extension WKWebViewController:WKUIDelegate{
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView?{
+        if(navigationAction.targetFrame?.isMainFrame)!{
+            webView.load(navigationAction.request)
+        }
+        return nil
+    }
+}
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845DE1E4211892280031B545 /* WKWebViewErrorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DE1E3211892280031B545 /* WKWebViewErrorStruct.swift */; };
 		84E2A9F720F1C3170047B1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2A9F620F1C3170047B1E3 /* AppDelegate.swift */; };
 		84E2A9F920F1C3170047B1E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2A9F820F1C3170047B1E3 /* ViewController.swift */; };
 		84E2A9FC20F1C3170047B1E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E2A9FA20F1C3170047B1E3 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		845DE1E3211892280031B545 /* WKWebViewErrorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewErrorStruct.swift; sourceTree = "<group>"; };
 		84E2A9F320F1C3170047B1E3 /* WKWebViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E2A9F620F1C3170047B1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E2A9F820F1C3170047B1E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845DE1E22118920B0031B545 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				845DE1E3211892280031B545 /* WKWebViewErrorStruct.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
 		84E2A9EA20F1C3170047B1E3 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 				84E2AA3220F243580047B1E3 /* ViewContoroller */,
 				84E2AA3120F243410047B1E3 /* Entity */,
 				84E2AA3020F242FD0047B1E3 /* Extension */,
+				845DE1E22118920B0031B545 /* Struct */,
 				84E2A9FD20F1C3170047B1E3 /* Assets.xcassets */,
 				84E2A9FF20F1C3170047B1E3 /* LaunchScreen.storyboard */,
 				84E2AA0220F1C3170047B1E3 /* Info.plist */,
@@ -305,6 +316,7 @@
 				84E2A9F920F1C3170047B1E3 /* ViewController.swift in Sources */,
 				84E2AA2F20F238F10047B1E3 /* Cookie.swift in Sources */,
 				84E2A9F720F1C3170047B1E3 /* AppDelegate.swift in Sources */,
+				845DE1E4211892280031B545 /* WKWebViewErrorStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
